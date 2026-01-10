@@ -1,0 +1,49 @@
+
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark; /* Force Dark Mode */
+
+  /* System Fonts */
+  --font-main: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", "Consolas", monospace;
+
+  /* Colors */
+  --bg-dark: #0f172a;
+  --bg-sidebar: rgba(15, 23, 42, 0.6); 
+  --bg-chat: rgba(15, 23, 42, 0.4);
+  --bg-input: rgba(30, 41, 59, 0.7);
+  
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --neon-blue: #0ea5e9;
+  --neon-green: #10b981;
+  --accent: #0ea5e9;
+  
+  --border: rgba(148, 163, 184, 0.15);
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  
+  --bubble-me: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  --bubble-them: rgba(51, 65, 85, 0.6);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155; 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569; 
+}

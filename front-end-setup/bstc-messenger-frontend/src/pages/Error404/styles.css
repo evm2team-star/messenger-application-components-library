@@ -1,0 +1,34 @@
+.notFoundContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: max-content;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background-color: inherit;
+}
+
+.errorCode {
+  font-size: 4rem;
+  color: #ff1900;
+  margin: 0;
+}
+
+.errorTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.errorTitle {
+  font-size: 2rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.errorMessage {
+  font-size: 1.2rem;
+  color: var(--text-main);
+  margin: 0;
+}

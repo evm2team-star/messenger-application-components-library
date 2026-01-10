@@ -1,0 +1,156 @@
+/* Specific dimensions for this modal */
+.group-modal-panel {
+    width: 800px;
+    height: 550px;
+}
+
+/* Layout for the body */
+.group-modal-body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Left side: Form Inputs */
+.group-form-section {
+    flex: 1;
+    padding: 25px;
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Right side: Member List */
+.group-members-section {
+    flex: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+.input-label {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* File Upload Area */
+.file-upload-box {
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+    padding: 20px 10px;
+    text-align: center;
+    transition: all 0.2s;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.file-upload-box:hover {
+    border-color: var(--primary);
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.custom-file-upload input {
+    display: none;
+}
+
+.custom-file-upload {
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+/* Search Input for Members */
+.search-input {
+    background: rgba(0, 0, 0, 0.2) !important;
+    border-color: var(--border);
+    margin-bottom: 10px;
+}
+
+/* Scrollable Member List */
+.member-selection-list {
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 5px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Scrollbar for list */
+.member-selection-list::-webkit-scrollbar { width: 4px; }
+.member-selection-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+/* Individual Member Row */
+.member-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 4px;
+    transition: background 0.2s;
+    border: 1px solid transparent;
+}
+
+.member-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.member-item.selected {
+    background: rgba(16, 185, 129, 0.15); /* Greenish tint */
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+.member-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.m-name { font-size: 0.9rem; font-weight: 500; color: var(--text-main); }
+.m-ip { font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono); }
+
+.checkbox-indicator {
+    color: var(--neon-green);
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+/* Footer & Buttons */
+.group-modal-footer {
+    padding: 20px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: flex-end;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.create-group-btn {
+    background: var(--neon-blue);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.3);
+    letter-spacing: 0.5px;
+}
+
+.create-group-btn:hover {
+    background: #0284c7;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(14, 165, 233, 0.5);
+}

@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+      - /app/node_modules  # Avoid overwriting node_modules
+    ports:
+      - "5173:5173"  # Vite dev server (if electron-vite exposes it)
+    environment:
+      - CHOKIDAR_USEPOLLING=true  # Needed for file watching in Docker
+      - ELECTRON_DISABLE_SECURITY_WARNINGS=true  # Optional, reduces noise
+    stdin_open: true
+    tty: true
+    # If you need GUI forwarding (Linux host only):
+    # environment:
+    #   - DISPLAY=$DISPLAY
+    # volumes:
+    #   - /tmp/.X11-unix:/tmp/.X11-unix
+    # network_mode: host  # Or use --network host in docker-compose up

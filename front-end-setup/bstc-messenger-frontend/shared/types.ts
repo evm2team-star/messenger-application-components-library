@@ -1,0 +1,1 @@
+export type DialogBoxType =  'pagenotfound' | 'alert' | 'snipper';
