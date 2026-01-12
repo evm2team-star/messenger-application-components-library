@@ -1,0 +1,25 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input-label {
+  font-size: 14px;
+  color: #333;
+}
+
+.input-field {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-field:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.input-error {
+  border-color: red;
+}
